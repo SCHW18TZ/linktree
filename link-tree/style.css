@@ -1,68 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
-*{
-    font-family:"poppins",sans-serif;
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap");
+* {
+  font-family: "poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-#main{
-    color: white;
-    height: 100vh;
-    background: #fc354c; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc354c, #0abfbc); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc354c, #0abfbc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#main {
+  color: white;
+  height: 100vh;
+  background: #fc354c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fc354c,
+    #0abfbc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fc354c,
+    #0abfbc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.text{
-    padding-top: 30px;
-    text-align: center;
+.text {
+  padding-top: 30px;
+  text-align: center;
 }
 
-.links{
-    font-size:1.5rem;
-    padding-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction:column;
+.links {
+  font-size: 1.5rem;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.link-item{
-    padding-bottom: 20px;
+.link-item {
+  padding-bottom: 20px;
 }
 
-button{
-    width:300px;
-    height:80px;
-    text-align:center;
-    color:white;
-    font-size: 2rem;
-    background-color: transparent;
-    border: 1px solid crimson;
-    transition:0.2s ease;
+button {
+  width: 300px;
+  height: 80px;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 1px solid crimson;
+  background: linear-gradient(to left, transparent 50%, crimson 50%) right;
+  background-size: 200%; /* For hiding the linear gradient*/
+  transition: 0.3s ease-out;
 }
 
-button:hover{
-    background-color:crimson;
+button:hover {
+  background-position: left;
 }
 
 /* Media query Start */
 
-@media screen and (min-device-width:768px) and (max-device-width:1024px) {
-    .link-item{
-        padding-bottom: 20px;
-    }
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .link-item {
+    padding-bottom: 20px;
+  }
 
-    .links{
-        font-size:1.5rem;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        flex-direction:column;
-    }
+  .links {
+    font-size: 1.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-
 
 /* Media query End */
