@@ -6,9 +6,14 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+}
+
 #main {
   color: white;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh; /*For responsiveness*/
   background: #fc354c; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
